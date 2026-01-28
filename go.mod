@@ -1,3 +1,3 @@
-module github.com/krux02/assimp
+module github.com/malanak2/assimp
 
 go 1.19

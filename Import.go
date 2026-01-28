@@ -32,7 +32,7 @@ func ImportFile(file string, flags uint) *Scene {
 
 func ImportFileEx(file string, flags uint)
 
-//garbage collection prevention
+// garbage collection prevention
 type logStream C.struct_aiLogStream
 
 var logStreams []*logStream
@@ -214,7 +214,7 @@ func (p *PropertyStore) SetPropertyString(name string, value string) {
 	defer C.free(unsafe.Pointer(cValue))
 
 	var st C.struct_aiString
-	C.strncpy(&st.data[0], cValue, C.MAXLEN)
+	C.strncpy(&st.data[0], cValue, C.AI_MAXLEN)
 	C.aiSetImportPropertyString((*C.struct_aiPropertyStore)(p), szName, &st)
 }
 
