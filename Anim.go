@@ -2,7 +2,7 @@ package assimp
 
 //#cgo linux LDFLAGS: -L/usr/local/lib -lassimp -lstdc++
 //#cgo windows CFLAGS: -I"C:/Program Files/Assimp/include"
-//#cgo windows LDFLAGS: -L"C:/Program Files/Assimp/lib/x64" -lassimp
+//#cgo windows LDFLAGS: -L"C:/Program Files/Assimp/lib/x64" -lassimp-vc143-mt
 //#include <assimp/defs.h>
 //#include <assimp/anim.h>
 import "C"
